@@ -1,0 +1,23 @@
+{
+  "name": "pro-ex-root",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "serve": "^11.1.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "description": "pro-ex single-spa 的根项目",
+  "main": "index.js",
+  "author": "林嘉珉",
+  "license": "MIT",
+  "dependencies": {
+    "single-spa": "^4.3.7"
+  }
+}

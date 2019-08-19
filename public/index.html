@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta name="importmap-type" content="systemjs-importmap"> -->
+  <title>云智易中台</title>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "app1": "http://localhost:8081/app.js",
+        "main": "http://localhost:8082/app.js",
+        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
+        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js"
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/system.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/amd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/named-exports.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/named-register.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/use-default.min.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
