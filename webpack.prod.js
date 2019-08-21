@@ -8,12 +8,12 @@ console.log('build')
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: './src/index.qiankun.js',
   output: {
     path: pathResolve('dist'),
     publicPath: '/single-app/',
-    chunkFilename: 'js/[name].js',
-    filename: 'js/[name].js'
+    chunkFilename: 'js/[name].[hash].js',
+    filename: 'js/[name].[hash].js'
   },
   devtool: 'source-map',
   plugins: [

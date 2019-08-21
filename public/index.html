@@ -4,25 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <meta name="importmap-type" content="systemjs-importmap"> -->
   <title>云智易中台</title>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "app1": "http://localhost:8081/app.js",
-        "main": "http://localhost:8082/app.js",
-        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
-        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js"
-      }
-    }
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/system.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/amd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/named-exports.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/named-register.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.1.0/extras/use-default.min.js"></script>
 </head>
 <body>
+  <div id="top-nav" style="text-align: center; margin: 20px 0;">
+    <a onclick="goto('主应用', '#/home')">主应用</a> | 
+    <a onclick="goto('子应用', '#/sub-app')">子应用</a>
+  </div>
   <div id="app"></div>
+
+  <script>
+    function goto(title, href) {
+      window.history.pushState({}, title, window.location.pathname + href);
+    }
+  </script>
 </body>
 </html>

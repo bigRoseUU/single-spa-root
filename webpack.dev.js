@@ -6,11 +6,11 @@ const pathResolve = (url) => path.resolve(__dirname, url)
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.qiankun.js',
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: './dist',
-    hot: true,
+    port: '1314',
+    publicPath: '/single-app/',
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
